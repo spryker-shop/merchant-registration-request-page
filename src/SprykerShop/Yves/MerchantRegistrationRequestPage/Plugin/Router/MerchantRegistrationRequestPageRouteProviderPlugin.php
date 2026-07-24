@@ -17,6 +17,11 @@ class MerchantRegistrationRequestPageRouteProviderPlugin extends AbstractRoutePr
      */
     protected const ROUTE_MERCHANT_REGISTRATION_REQUEST = 'merchant-registration-request';
 
+    /**
+     * {@inheritDoc}
+     *
+     * @api
+     */
     public function addRoutes(RouteCollection $routeCollection): RouteCollection
     {
         $routeCollection = $this->addMerchantRegistrationRequestRoute($routeCollection);
